@@ -1,0 +1,122 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Core information -->
+    <groupId>com.bytegen</groupId>
+    <artifactId>method-reference-tutorial</artifactId>
+    <version>1.0.0</version>
+
+    <!-- Packaging information -->
+    <packaging>jar</packaging>
+
+    <!-- Properties information -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!-- Project information -->
+    <name>method-reference-tutorial</name>
+    <description>Java maven tutorial project for describe the java method reference.</description>
+    <url>https://maven.apache.org</url>
+    <inceptionYear>2024</inceptionYear>
+
+    <!-- Licenses information -->
+    <licenses>
+        <license>
+            <name>Apache Licence</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <!-- Organization information -->
+    <organization>
+        <name>ByteGen Technologies</name>
+    </organization>
+
+    <!-- Developers information -->
+    <developers>
+        <developer>
+            <id>1</id>
+            <name>Sachith Ariyathilaka</name>
+            <organization>ByteGen Technologies</organization>
+            <url>https://github.com/sachithariyathilaka</url>
+            <email>sachith.vidu@yahoo.com</email>
+            <roles>
+                <role>Chairman</role>
+            </roles>
+            <timezone>UTC +5:30</timezone>
+        </developer>
+    </developers>
+
+    <!-- Repository information -->
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <!-- Plugin repository information -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <!-- Build information -->
+    <build>
+
+        <!-- General information -->
+        <directory>${project.basedir}/target</directory>
+        <outputDirectory>${project.build.directory}/classes</outputDirectory>
+        <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+        <finalName>${project.artifactId}-${project.version}</finalName>
+
+        <!-- Plugin information -->
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>8</source>
+                        <target>8</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+
+        </pluginManagement>
+
+    </build>
+
+    <!-- Reporting information -->
+    <reporting>
+        <outputDirectory>${project.build.directory}/site</outputDirectory>
+    </reporting>
+
+    <!-- Profile information -->
+    <profiles>
+        <profile>
+            <id>Development</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
+
+</project>
