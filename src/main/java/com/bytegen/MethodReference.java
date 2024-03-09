@@ -9,14 +9,12 @@ import com.sun.xml.internal.ws.util.StringUtils;
  * @author Sachith Ariyathilaka
  * @version 1.0.0
  * @date 2024/03/09
- *
  */
 public class MethodReference {
 
     /**
      * @constructor MethodReference
      * @description This is the default constructor of MethodReference class without any arguments.
-     *
      */
     public MethodReference() {
     }
@@ -26,7 +24,6 @@ public class MethodReference {
      * @description This is the argument constructor of MethodReference class with one argument.
      *
      * @param brand string value
-     *
      */
     public MethodReference(String brand) {
         StringUtils.capitalize(brand);
