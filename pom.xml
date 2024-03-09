@@ -18,7 +18,7 @@
     <!-- Project information -->
     <name>method-reference-tutorial</name>
     <description>Java maven tutorial project for describe the java method reference.</description>
-    <url>https://maven.apache.org</url>
+    <url>https://github.com/sachithariyathilaka/method-reference-tutorial</url>
     <inceptionYear>2024</inceptionYear>
 
     <!-- Licenses information -->
