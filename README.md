@@ -1,5 +1,5 @@
 # Method Reference Tutorial
-Java maven tutorial project for method references
+Java maven tutorial project for method references.
 
 * ### Technologies
   * Java 8
