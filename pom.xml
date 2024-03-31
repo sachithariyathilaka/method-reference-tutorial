@@ -3,44 +3,39 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Core information -->
-    <groupId>com.bytegen</groupId>
+    <groupId>io.github.sachithariyathilaka</groupId>
     <artifactId>method-reference-tutorial</artifactId>
     <version>1.0.0</version>
 
     <!-- Packaging information -->
     <packaging>jar</packaging>
 
-    <!-- Properties information -->
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
     <!-- Project information -->
-    <name>method-reference-tutorial</name>
-    <description>Java maven tutorial project for describe the java method reference.</description>
+    <name>Method Reference Tutorial</name>
+    <description>Java maven tutorial project for describe the java method reference</description>
     <url>https://github.com/sachithariyathilaka/method-reference-tutorial</url>
     <inceptionYear>2024</inceptionYear>
 
-    <!-- Licenses information -->
+    <!-- License information -->
     <licenses>
         <license>
-            <name>Apache Licence</name>
-            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+            <name>MIT Licence</name>
         </license>
     </licenses>
 
     <!-- Organization information -->
     <organization>
         <name>ByteGen Technologies</name>
+        <url>https://github.com/sachithariyathilaka</url>
     </organization>
 
-    <!-- Developers information -->
+    <!-- Developer information -->
     <developers>
         <developer>
             <id>1</id>
             <name>Sachith Ariyathilaka</name>
             <organization>ByteGen Technologies</organization>
-            <url>https://github.com/sachithariyathilaka</url>
+            <organizationUrl>https://github.com/sachithariyathilaka</organizationUrl>
             <email>sachith.vidu@yahoo.com</email>
             <roles>
                 <role>Chairman</role>
@@ -48,6 +43,25 @@
             <timezone>UTC +5:30</timezone>
         </developer>
     </developers>
+
+    <!-- Property information -->
+    <properties>
+
+        <!-- Project properties -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>8</java.version>
+
+    </properties>
+
+    <!-- Profile information -->
+    <profiles>
+        <profile>
+            <id>tutorial</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
 
     <!-- Repository information -->
     <repositories>
@@ -88,35 +102,29 @@
         <finalName>${project.artifactId}-${project.version}</finalName>
 
         <!-- Plugin information -->
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <configuration>
-                        <source>8</source>
-                        <target>8</target>
-                    </configuration>
-                </plugin>
-            </plugins>
-
-        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
 
     </build>
+
+    <!-- SCM information -->
+    <scm>
+        <url>https://github.com/sachithariyathilaka/method-reference-tutorial</url>
+        <connection>scm:git:https://github.com/sachithariyathilaka/method-reference-tutorial.git</connection>
+        <developerConnection>scm:git:git@github.com:sachithariyathilaka/method-reference-tutorial.git</developerConnection>
+    </scm>
 
     <!-- Reporting information -->
     <reporting>
         <outputDirectory>${project.build.directory}/site</outputDirectory>
     </reporting>
-
-    <!-- Profile information -->
-    <profiles>
-        <profile>
-            <id>Development</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-        </profile>
-    </profiles>
 
 </project>

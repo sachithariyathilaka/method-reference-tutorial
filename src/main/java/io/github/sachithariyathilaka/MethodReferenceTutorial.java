@@ -1,4 +1,4 @@
-package com.bytegen;
+package io.github.sachithariyathilaka;
 
 import com.sun.xml.internal.ws.util.StringUtils;
 
@@ -6,35 +6,29 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @class App
- * @description This is the main class for the method reference tutorial.
+ * This is the main class for the method reference tutorial.
  *
- * @author Sachith Ariyathilaka
+ * @author  Sachith Ariyathilaka
  * @version 1.0.0
- * @date 2024/03/09
+ * @since   2024/03/09
  */
-public class App {
+public class MethodReferenceTutorial {
 
-    /**
-     * @method main
-     * @description Java main method.
-     */
     public static void main( String[] args ) {
 
         List<String> brands = Arrays.asList("honda", "audi", "toyota");
-        App app = new App();
+        MethodReferenceTutorial methodReferenceTutorial = new MethodReferenceTutorial();
 
-        app.staticMethodReference(brands);
-        app.instanceMethodReference(brands);
-        app.instanceMethodReferenceWithArbitraryObject(brands);
-        app.constructorMethodReference(brands);
+        methodReferenceTutorial.staticMethodReference(brands);
+        methodReferenceTutorial.instanceMethodReference(brands);
+        methodReferenceTutorial.instanceMethodReferenceWithArbitraryObject(brands);
+        methodReferenceTutorial.constructorMethodReference(brands);
     }
 
     /**
-     * @method staticMethodReference
-     * @description This method used to handle the with and without static method reference example.
+     * This method used to handle the with and without static method reference example.
      *
-     * @param brands list of strings
+     * @param   brands list of strings
      */
     public void staticMethodReference(List<String> brands) {
 
@@ -48,10 +42,9 @@ public class App {
     }
 
     /**
-     * @method instanceMethodReference
-     * @description This method used to handle the with and without instance method reference example.
+     * This method used to handle the with and without instance method reference example.
      *
-     * @param brands list of strings
+     * @param   brands list of strings
      */
     public void instanceMethodReference(List<String> brands) {
 
@@ -67,10 +60,9 @@ public class App {
     }
 
     /**
-     * @method instanceMethodReferenceWithArbitraryObject
-     * @description This method used to handle the with and without instance method reference with an arbitrary object example.
+     * This method used to handle the with and without instance method reference with an arbitrary object example.
      *
-     * @param brands list of strings
+     * @param   brands list of strings
      */
     public void instanceMethodReferenceWithArbitraryObject(List<String> brands) {
 
@@ -84,10 +76,9 @@ public class App {
     }
 
     /**
-     * @method constructorMethodReference
-     * @description This method used to handle the with and without constructor method reference example.
+     * This method used to handle the with and without constructor method reference example.
      *
-     * @param brands list of strings
+     * @param   brands list of strings
      */
     public void constructorMethodReference(List<String> brands) {
 
@@ -101,10 +92,9 @@ public class App {
     }
 
     /**
-     * @method displayBrands
-     * @description This method used to print brands as strings to the console.
+     * This method used to print brands as strings to the console.
      *
-     * @param brands list of strings
+     * @param   brands list of strings
      */
    private void displayBrands(List<String> brands) {
 
