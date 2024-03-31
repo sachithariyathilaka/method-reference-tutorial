@@ -96,7 +96,7 @@ public class MethodReferenceTutorial {
      *
      * @param   brands list of strings
      */
-   private void displayBrands(List<String> brands) {
+    private void displayBrands(List<String> brands) {
 
        for (String brand: brands)
            if (brands.indexOf(brand) != brands.size() -1)
@@ -105,5 +105,5 @@ public class MethodReferenceTutorial {
                System.out.print(StringUtils.capitalize(brand));
 
        System.out.println();
-   }
+    }
 }
