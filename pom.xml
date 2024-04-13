@@ -18,9 +18,11 @@
 
     <!-- License information -->
     <licenses>
+             
         <license>
             <name>MIT Licence</name>
         </license>
+             
     </licenses>
 
     <!-- Organization information -->
@@ -31,6 +33,7 @@
 
     <!-- Developer information -->
     <developers>
+             
         <developer>
             <id>1</id>
             <name>Sachith Ariyathilaka</name>
@@ -42,6 +45,7 @@
             </roles>
             <timezone>UTC +5:30</timezone>
         </developer>
+             
     </developers>
 
     <!-- Property information -->
@@ -55,16 +59,19 @@
 
     <!-- Profile information -->
     <profiles>
+             
         <profile>
             <id>tutorial</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
         </profile>
+             
     </profiles>
 
     <!-- Repository information -->
     <repositories>
+             
         <repository>
             <id>central</id>
             <name>Central Repository</name>
@@ -74,10 +81,12 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+             
     </repositories>
 
     <!-- Plugin repository information -->
     <pluginRepositories>
+             
         <pluginRepository>
             <id>central</id>
             <name>Central Repository</name>
@@ -90,6 +99,7 @@
                 <updatePolicy>never</updatePolicy>
             </releases>
         </pluginRepository>
+             
     </pluginRepositories>
 
     <!-- Build information -->
@@ -103,6 +113,7 @@
 
         <!-- Plugin information -->
         <plugins>
+                 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -111,6 +122,7 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+                 
         </plugins>
 
     </build>
