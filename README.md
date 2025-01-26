@@ -6,13 +6,13 @@ Java maven tutorial project for method references.
   * Method Reference
   * Maven
 
-* ### Configuration
-  * https://sachithariyathilaka.medium.com/method-reference-in-java-0572a9b371dc
+* ### Documentation
+  * [Read on Medium](https://sachithariyathilaka.medium.com/method-reference-in-java-0572a9b371dc)
 
 * ### Release Note
 
-  * Release: 1.0.0
-  * Date: 2024/03/24
+  * Version: 1.0.0
+  * Release Date: 2024/03/24
   * Module: Method Reference Tutorial
   * Changes
     * Method reference scenario functionalities implemented.
